@@ -1,0 +1,23 @@
+.about {
+  h1 {
+    text-align: center;
+  }
+  .sections {
+    display: flex;
+    justify-content: space-between;
+    .left {
+      width: 40%;
+      video {
+        width: 50vw;
+        padding: 1vw 0 0 6vw;
+      }
+    }
+    .right {
+        width: 40%;
+      p {
+        font-size: 1.5rem;
+        padding: 1vw 7vw 0 0;
+      }
+    }
+  }
+}

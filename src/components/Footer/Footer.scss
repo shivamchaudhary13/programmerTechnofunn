@@ -1,0 +1,35 @@
+.footer {
+    margin-top: 2vh;
+.footer1{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1974BB;
+    color: #fff;
+    .left{
+        padding-top: 3vh;
+    }
+    .middle{
+        padding-top: 5vh;
+    }
+    .right{
+        padding-top: 15vh;
+        .icon {
+            font-size: 2rem;
+            margin-left: 2vw;
+        }
+    }
+}
+
+.footer2{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    .icon{
+        font-size: 1rem;
+        margin: 2vh 1vh 0 1vh;
+    }
+    p{
+        margin: 1vh 0 1vh 0;
+    }
+}
+}

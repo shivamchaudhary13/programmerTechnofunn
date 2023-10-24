@@ -1,0 +1,23 @@
+.courses {
+    h1{
+        text-align: center;
+    }
+.image-slider {
+    display: flex;
+    padding: 2vw;
+    .icon{
+        height: 5vh;
+        margin: 12vh 0 0 8vw;
+        &:hover {
+            background-color: #1974BB;
+        }
+    }
+    .image-container {
+        .images {
+            width: 10vw;
+            height: 20vh;
+            margin-left: 8vw;
+        }
+    }
+  }
+}
