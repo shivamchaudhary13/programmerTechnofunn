@@ -1,24 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.7820ce27.css",
-    "main.js": "/static/js/main.9e80feed.js",
+    "main.css": "/static/css/main.898c8626.css",
+    "main.js": "/static/js/main.5ed11013.js",
     "static/js/787.4b9ee4cd.chunk.js": "/static/js/787.4b9ee4cd.chunk.js",
     "static/media/video1.mp4": "/static/media/video1.a955428d9a1ea58d8474.mp4",
     "static/media/img5.png": "/static/media/img5.c58d8041eae21808afcf.png",
+    "static/media/jstuts.png": "/static/media/jstuts.b2c285307d5d25d3a668.png",
     "static/media/img2.jpg": "/static/media/img2.2ddefb2f231b1af91544.jpg",
     "static/media/img1.jpg": "/static/media/img1.2eba524d506d0b807eb4.jpg",
     "static/media/img3.jpg": "/static/media/img3.fe512eac5f980d6e9e35.jpg",
     "static/media/img4.jpg": "/static/media/img4.9f29f77e16cb1ce91f75.jpg",
+    "static/media/angulartuts.jpg": "/static/media/angulartuts.0271cb1c433c4770a946.jpg",
+    "static/media/htmlintro1.jpg": "/static/media/htmlintro1.698d396290f081c08ebc.jpg",
     "static/media/html.jpg": "/static/media/html.3045d73ebfd39378e24d.jpg",
+    "static/media/reacttuts.jpeg": "/static/media/reacttuts.5622c7e11aa536ec1102.jpeg",
+    "static/media/htmlsyntac.jpg": "/static/media/htmlsyntac.0812cc0f92d19beffc00.jpg",
+    "static/media/onlinetest.jpg": "/static/media/onlinetest.660f32987cf66541f35a.jpg",
     "static/media/css.jpg": "/static/media/css.7e5006075e5342b06029.jpg",
+    "static/media/htmltuts.jpg": "/static/media/htmltuts.3680be108549936c43d9.jpg",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.7820ce27.css.map": "/static/css/main.7820ce27.css.map",
-    "main.9e80feed.js.map": "/static/js/main.9e80feed.js.map",
+    "main.898c8626.css.map": "/static/css/main.898c8626.css.map",
+    "main.5ed11013.js.map": "/static/js/main.5ed11013.js.map",
     "787.4b9ee4cd.chunk.js.map": "/static/js/787.4b9ee4cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7820ce27.css",
-    "static/js/main.9e80feed.js"
+    "static/css/main.898c8626.css",
+    "static/js/main.5ed11013.js"
   ]
 }
