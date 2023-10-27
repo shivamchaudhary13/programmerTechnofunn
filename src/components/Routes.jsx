@@ -4,11 +4,18 @@ import { Login } from './Login/Login'
 import { Register } from './Register/Register'
 import { Main } from './Main/Main'
 import { Splash } from './Splash/Splash'
-import { htmlTutorials } from './Tutorials/Tutorials'
-import { cssTutorials } from './Tutorials/Tutorials'
-import { javascriptTutorials } from './Tutorials/Tutorials'
-import { angularTutorials } from './Tutorials/Tutorials'
-import { reactTutorials } from './Tutorials/Tutorials'
+import { htmlTutorials } from './CoursePage/CoursePage'
+import { cssTutorials } from './CoursePage/CoursePage'
+import { javascriptTutorials } from './CoursePage/CoursePage'
+import { angularTutorials } from './CoursePage/CoursePage'
+import { reactTutorials } from './CoursePage/CoursePage'
+import { HtmlOnlineTest } from './OnlineTests/HtmlOnlineTest'
+import { CssOnlineTest } from './OnlineTests/CssOnlineTest'
+import { JsOnlineTest } from './OnlineTests/JsOnlineTest'
+import { AngularOnlineTest } from './OnlineTests/AngularOnlineTest'
+import { ReactOnlineTest } from './OnlineTests/ReactOnlineTest'
+import { TutsTopics } from './TutsTopics/TutsTopics'
+import { HtmlIntro } from './Tutorials/HtmlTuts'
 
 export const Navigation = () => {
   return (
@@ -23,6 +30,17 @@ export const Navigation = () => {
                 <Route path='/javascript' Component={javascriptTutorials}></Route>
                 <Route path='/angular' Component={angularTutorials}></Route>
                 <Route path='/react' Component={reactTutorials}></Route>
+                <Route path='/html-online-test' Component={HtmlOnlineTest}></Route>
+                <Route path='/css-online-test' Component={CssOnlineTest}></Route>
+                <Route path='/js-online-test' Component={JsOnlineTest}></Route>
+                <Route path='/angular-online-test' Component={AngularOnlineTest}></Route>
+                <Route path='/react-online-test' Component={ReactOnlineTest}></Route>
+                <Route path='/html-tutorial' Component={TutsTopics}></Route>
+                <Route path='/intoduction' Component={HtmlIntro}></Route>
+                {/* <Route path='/html-tutorial' Component={TutsTopics}></Route>
+                <Route path='/html-tutorial' Component={TutsTopics}></Route>
+                <Route path='/html-tutorial' Component={TutsTopics}></Route>
+                <Route path='/html-tutorial' Component={TutsTopics}></Route> */}
             </Routes>
         </Router>
   )

@@ -21,12 +21,17 @@
     .right{
         width: 60%;
         background-color: grey;
+        .loginmsg{
+            color: #ff0000;
+            text-align: center;
+            margin: 2vh 0 0 0;
+        }
         h2{
             text-align: center;
             margin: 20vh 0 0 0;
         }
         form{
-            padding: 5vh 0 0 10vh;
+            padding: 2vh 0 0 10vh;
             input{
                 margin: 3vh 0 0 0;
                 border-radius: 5px;
@@ -52,6 +57,119 @@
             }
             .forgot{
                 margin: 0 0 0 10vw;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .login{
+        width: 135%;
+        height: 80vh;
+        margin: 20vw 0px 0px 10vw;
+        .left{
+            display: none;
+        }
+        .right{
+            form{
+                padding: 2vh 0 0 6vh;
+                button{
+                    margin: 2vh 0 0 19vw;
+                }
+            }
+            .bottomLines{
+                p{
+                    padding: 1vh 0 0 7vw;
+                    a{
+                        padding: 0 0 0 25vw;
+                    }
+                }
+                .forgot{
+                    padding: 0 0 0 16vw;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+    .login{
+        width: 135%;
+        height: 80vh;
+        margin: 20vw 0px 0px 10vw;
+        .left{
+            display: none;
+        }
+        .right{
+            h2{
+                font-size: 3rem;
+            }
+            form{
+                padding: 2vh 0 0 8vh;
+                input{
+                    height: 4vh;
+                    &::placeholder{
+                        font-size: 1.5rem;
+                    }
+                }
+                button{
+                    margin: 2vh 0 0 20vw;
+                    font-size: 2rem;
+                }
+            }
+            .bottomLines{
+                p{
+                    padding: 1vh 0 0 7vw;
+                    font-size: 1.5rem;
+                    a{
+                        padding: 0 0 0 5vw;
+                    }
+                }
+                .forgot{
+                    padding: 0 0 0 16vw;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 500px) and (max-width: 700px) {
+    .login{
+        width: 135%;
+        height: 80vh;
+        margin: 20vw 0px 0px 10vw;
+        .left{
+            display: none;
+        }
+        .right{
+            h2{
+                font-size: 2rem;
+            }
+            form{
+                padding: 2vh 0 0 10vh;
+                input{
+                    height: 4vh;
+                    &::placeholder{
+                        font-size: 1rem;
+                    }
+                }
+                button{
+                    margin: 2vh 0 0 20vw;
+                    font-size: 1rem;
+                }
+            }
+            .bottomLines{
+                p{
+                    padding: 1vh 0 0 7vw;
+                    font-size: 1rem;
+                    a{
+                        padding: 0 0 0 5vw;
+                    }
+                }
+                .forgot{
+                    padding: 0 0 0 16vw;
+                    font-size: 1rem;
+                }
             }
         }
     }

@@ -1,15 +1,14 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../../assets/logo/pic.png';
 import '../Navbar/Navbar.scss';
 import avatar from '../../assets/avatar.jpg'
 
 export const NavbarScreen = () => {
+  let data = JSON.parse(localStorage.getItem('user'))
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container className='container' fluid>
@@ -25,10 +24,13 @@ export const NavbarScreen = () => {
             <Nav.Link className='navLink' href="#action2">Career</Nav.Link>
             <Nav.Link className='navLink' href="#action2">About Us</Nav.Link>
             <Nav.Link className='navLink' href="#action2">Contact Us</Nav.Link>
+            <div className='profile'>
             <img className='userpic' src={avatar} />
-            <p className='user'>Shivam Chaudhary</p>
-
+            <p className='user'>Hello <span>{data.result[0].firstname}</span></p>
+            <a href='/login'>
             <Button>Logout</Button>
+            </a>
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Container>

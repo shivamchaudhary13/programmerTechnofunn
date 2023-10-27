@@ -15,7 +15,7 @@ export function Courses() {
         <div className="image-container">
         <a href="/html"><img className="images" src={html} /></a>
         <a href="/css"><img className="images" src={css} /></a>
-        <a href="/javscript"><img className="images" src={javascript} /></a>
+        <a href="/javascript"><img className="images" src={javascript} /></a>
         <a href="/angular"><img className="images" src={angular} /></a>
         <a href="/react"><img className="images" src={react} /></a>
         </div>

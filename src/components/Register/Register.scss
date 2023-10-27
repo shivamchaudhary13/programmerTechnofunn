@@ -52,3 +52,142 @@
         }
     }
 }
+
+
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .register{
+        display: flex;
+        width: 135%;
+        height: 80vh;
+        margin: 15vw 0 0 10vw;
+        .left{
+            width: 60%;
+            background-color: #1974BB;
+            h2{
+                text-align: center;
+                margin: 5vh 0 0 0;
+            }
+            form{
+                padding: 3vh 0 0 7vh;
+                button{
+                    margin: 2vh 0 0 16vw;
+                    border-radius: 0.5rem;
+                    background-color: grey;
+                    color: #fff;
+                }
+            }
+            .bottomLines{
+                display: flex;
+                justify-content: space-evenly;
+                padding: 2vh 0 0 0;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+        .right{
+            display: none;
+        }
+    }
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+    .register{
+        display: flex;
+        width: 135%;
+        height: 80vh;
+        margin: 15vw 0 0 10vw;
+        .left{
+            width: 60%;
+            background-color: #1974BB;
+            h2{
+                text-align: center;
+                margin: 5vh 0 0 0;
+            }
+            form{
+                padding: 3vh 0 0 10vh;
+                input{
+                    height: 4vh;
+                    &::placeholder{
+                        font-size: 1.5rem;
+                    }
+                }
+                button{
+                    margin: 2vh 0 0 18vw;
+                    font-size: 1.5rem;
+                }
+            }
+            .bottomLines{
+                display: flex;
+                justify-content: space-evenly;
+                padding: 2vh 0 0 0;
+                p{
+                    font-size: 2rem;
+                }
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+        .right{
+            display: none;
+        }
+    }
+}
+@media (min-width: 500px) and (max-width: 700px) {
+    .register{
+        display: flex;
+        width: 135%;
+        height: 80vh;
+        margin: 15vw 0 0 10vw;
+        .left{
+            width: 60%;
+            background-color: #1974BB;
+            h2{
+                text-align: center;
+                margin: 5vh 0 0 0;
+            }
+            form{
+                padding: 3vh 0 0 10vh;
+                input{
+                    height: 4vh;
+                    &::placeholder{
+                        font-size: 1rem;
+                    }
+                }
+                button{
+                    margin: 2vh 0 0 16vw;
+                    border-radius: 0.5rem;
+                    background-color: grey;
+                    color: #fff;
+                }
+            }
+            .bottomLines{
+                display: flex;
+                justify-content: space-evenly;
+                padding: 2vh 0 0 0;
+                p{
+                    font-size: 1.5rem;
+                }
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+        .right{
+            display: none;
+        }
+    }
+}

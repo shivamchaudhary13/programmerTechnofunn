@@ -33,3 +33,130 @@
     }
 }
 }
+
+
+
+@media (min-width: 300px) and (max-width: 800px) {
+    .footer {
+        margin-top: 2vh;
+    .footer1{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #1974BB;
+        color: #fff;
+        .left{
+            padding: 3vh 0 0 4vw;
+            img{
+                width: 10vw;
+            }
+            h3{
+                font-size: 1rem;
+            }
+        }
+        .middle{
+            display: none;
+        }
+        .right{
+            padding: 3vh 0 0 18vw;
+            width: 80%;
+            h3{
+                font-size: 1rem;
+            }
+            .icon {
+                font-size: 1rem;
+                margin-left: 2vw;
+            }
+        }
+    }
+    
+    .footer2{
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        .icon{
+            font-size: 1rem;
+            margin: 2vh 1vh 0 1vh;
+        }
+        p{
+            margin: 1vh 0 1vh 0;
+        }
+    }
+    }
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+    .footer {
+        margin-top: 2vh;
+    .footer1{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #1974BB;
+        color: #fff;
+        .left{
+            padding-top: 3vh;
+        }
+        .middle{
+            visibility: visible;
+            padding-top: 3vh;
+        }
+        .right{
+            padding-top: 10vh;
+            .icon {
+                font-size: 2rem;
+                margin-left: 2vw;
+            }
+        }
+    }
+    
+    .footer2{
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        .icon{
+            font-size: 1rem;
+            margin: 2vh 1vh 0 1vh;
+        }
+        p{
+            margin: 1vh 0 1vh 0;
+        }
+    }
+    }
+}
+@media (min-width: 500px) and (max-width: 700px) {
+    .footer {
+        margin-top: 2vh;
+    .footer1{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #1974BB;
+        color: #fff;
+        .left{
+            padding-top: 3vh;
+        }
+        .middle{
+            display:list-item;
+            list-style: none;
+            padding: 1vh 0 0 10vw;
+        }
+        .right{
+            padding: 10vh 0 0 20vw;
+            .icon {
+                font-size: 2rem;
+                margin-left: 2vw;
+            }
+        }
+    }
+    
+    .footer2{
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        .icon{
+            font-size: 1rem;
+            margin: 2vh 1vh 0 1vh;
+        }
+        p{
+            margin: 1vh 0 1vh 0;
+        }
+    }
+    }
+}

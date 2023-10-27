@@ -1,0 +1,14 @@
+.topics{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    a{
+        flex: 0 0 calc(25% - 10px);
+        margin: 5px;
+        text-align: center;
+        Button{
+            width: 15vw;
+            margin: 3vh 0 0 0;
+        }
+    }
+}

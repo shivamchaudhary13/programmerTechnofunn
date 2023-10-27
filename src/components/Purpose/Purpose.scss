@@ -6,3 +6,38 @@
         font-style: italic;
     }
 }
+
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .purpose{
+        text-align: center;
+        padding: 2vw;
+        p{
+            font-size: 2rem;
+            font-style: italic;
+        }
+    }
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+    .purpose{
+        text-align: center;
+        padding: 2vw;
+        p{
+            font-size: 2rem;
+            font-style: italic;
+        }
+    }
+}
+@media (min-width: 500px) and (max-width: 700px) {
+    .purpose{
+        h1{
+            padding: 6vw 0 0 0;
+        }
+        text-align: center;
+        padding: 2vw;
+        p{
+            font-size: 2rem;
+            font-style: italic;
+        }
+    }
+}

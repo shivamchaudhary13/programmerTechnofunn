@@ -21,3 +21,97 @@
     }
   }
 }
+
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .courses {
+        h1{
+            text-align: center;
+        }
+    .image-slider {
+        display: flex;
+        // padding: 2vw;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        a{
+            flex: 0 0 calc(25% - 10px);
+            margin: 10px;
+        }
+        .icon{
+            height: 5vh;
+            margin: 12vh 0 0 8vw;
+            &:hover {
+                background-color: #1974BB;
+            }
+        }
+        .image-container {
+            .images {
+                width: 30vw;
+                height: 20vh;
+                // margin-left: 8vw;
+                margin: 6vw;
+            }
+        }
+      }
+    }
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+    .courses {
+        h1{
+            text-align: center;
+        }
+    .image-slider {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        a{
+            flex: 0 0 calc(25% - 10px);
+            margin: 10px;
+        }
+        .icon{
+            height: 5vh;
+            margin: 12vh 0 0 8vw;
+            &:hover {
+                background-color: #1974BB;
+            }
+        }
+        .image-container {
+            .images {
+                width: 32vw;
+                height: 20vh;
+                margin: 6vw;
+            }
+        }
+      }
+    }
+}
+@media (min-width: 500px) and (max-width: 700px) {
+    .courses {
+        h1{
+            text-align: center;
+        }
+    .image-slider {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        a{
+            flex: 0 0 calc(25% - 10px);
+            margin: 10px;
+        }
+        .icon{
+            height: 5vh;
+            margin: 12vh 0 0 8vw;
+            &:hover {
+                background-color: #1974BB;
+            }
+        }
+        .image-container {
+            .images {
+                width: 30vw;
+                height: 20vh;
+                margin: 6vw;
+            }
+        }
+      }
+    }
+}
