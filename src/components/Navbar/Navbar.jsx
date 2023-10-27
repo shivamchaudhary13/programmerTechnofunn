@@ -26,7 +26,8 @@ export const NavbarScreen = () => {
             <Nav.Link className='navLink' href="#action2">Contact Us</Nav.Link>
             <div className='profile'>
             <img className='userpic' src={avatar} />
-            <p className='user'>Hello <span>{data.result[0].firstname}</span></p>
+            {/* <p className='user'>Hello <span>{data.result[0].firstname}</span></p> */}
+            <p className='user'>Hello <span>Shivam Chaudhary</span></p>
             <a href='/login'>
             <Button>Logout</Button>
             </a>
