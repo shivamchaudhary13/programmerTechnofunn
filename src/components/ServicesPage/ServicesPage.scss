@@ -1,0 +1,17 @@
+.services {
+  .courses {
+    text-align: center;
+    margin: 5vh 0 0 0;
+    font-size: 3em;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    margin: 5vh 0 10vh 7vw;
+    row-gap: 5vh;
+  }
+  .image {
+    width: 22vw;
+    height: 30vh;
+  }
+}

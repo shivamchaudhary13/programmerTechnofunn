@@ -1,25 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Courses/Courses.scss";
 
-import html from "../../assets/skills/html.jpg";
-import css from "../../assets/skills/css.jpg";
-import javascript from "../../assets/skills/javascript.jpg";
-import angular from "../../assets/skills/angular.png";
-import react from "../../assets/skills/react.jpg";
+import techSkills from "../../assets/skills/techcourses.jpg";
+import govePrep from "../../assets/skills/govPrep.jpg";
+import onlineTest from "../../assets/skills/onlineTests.png";
+import jobapply from "../../assets/skills/jobapply.jpg";
+import constants from "../../utils/constants";
 
-export function Courses() {
+export const Courses = () => {
   return (
     <div className="courses">
-      <h1>Our Courses</h1>
+      <h1>{constants.ourServices}</h1>
       <div className="image-slider">
         <div className="image-container">
-        <a href="/html"><img className="images" src={html} /></a>
-        <a href="/css"><img className="images" src={css} /></a>
-        <a href="/javascript"><img className="images" src={javascript} /></a>
-        <a href="/angular"><img className="images" src={angular} /></a>
-        <a href="/react"><img className="images" src={react} /></a>
+            <img className="images" src={techSkills} />
+            <img className="images" src={govePrep} />
+            <img className="images" src={onlineTest} />
+            <img className="images" src={jobapply} />
         </div>
       </div>
     </div>
   );
-}
+};

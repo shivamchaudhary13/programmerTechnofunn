@@ -1,0 +1,30 @@
+.candidate{
+    table{
+        width: 100%;
+        height: auto;
+        margin: 5vh 0 0 1vw;
+    }
+}
+
+.inviteForm {
+    border: 2px solid black;
+    width: 30%;
+    margin: 25vh 0 0 34vw;
+    form {
+        h3{
+            text-align: center;
+            margin: 3vh 0 0 0;
+        }
+        input{
+            margin: 3vh 0 0 5vw;
+            width: 20vw;
+        }
+        button{
+            margin: 3vh 0 5vh 12vw;
+        }
+    }
+}
+
+.jobapplyform {
+    margin: 10vh 0 0 0;
+}

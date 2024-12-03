@@ -1,0 +1,275 @@
+.jobOpenings {
+  .header {
+    text-align: center;
+    color: #1974bb;
+    font-size: 3em;
+    margin: 1vw;
+  }
+  Button {
+    margin: 4vh;
+  }
+  Table {
+    width: 100%;
+    margin-left: 10vw;
+  }
+}
+
+.createForm {
+  Button {
+    margin: 2vh;
+  }
+  .header {
+    display: flex;
+    margin: 3vh 0 0 0;
+    .jobHeaders {
+      // text-align: center;
+      margin: 0 0 0 40vw;
+    }
+  }
+  .jobForm {
+    // background-color: rgba(128, 128, 128, 0.158);
+    width: 80%;
+    margin: 4vh 0 0 18vw;
+    .box {
+      display: flex;
+    }
+    .responsibilitiesText {
+      width: 60vw;
+      margin: 0 0 0 1vw;
+    }
+    .create {
+      margin: 2vh 0 0 22vw;
+    }
+    .cancel {
+      margin: 2vh 0 0 10vw;
+    }
+  }
+}
+
+.jobSearch {
+  .inputBox {
+    width: 60vw;
+    height: 8vh;
+    margin: 2vw 0 0 20vw;
+  }
+  .search {
+    margin: 3vh 0 0 46vw;
+  }
+  .card {
+    display: flex;
+  }
+  .groupButton{
+    background-color: transparent;
+    border: 1px solid grey;
+    color: black;
+    width: 10vw;
+    margin: 4vh 0 0 0;
+  }
+  #jobCard {
+    display: flex;
+    margin: 5vh 0 5vh 10vw
+  }
+}
+
+
+.body {
+  margin: 2vh 0 0 4vw;
+  span {
+    display: flex;
+    p{
+      margin-right: 10px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .vacancy{
+      margin-top: 3px;
+    }
+    .apply{
+      margin-left: 60vw;
+    }
+    .save{
+      margin-left: 5vw;
+    }
+  }
+  .jobDetailsPoints {
+    position: relative;
+    padding-left: 20px;
+  }
+
+  .jobDetailsPoints::before {
+    content: "->";
+    position: relative;
+    left: 0;
+    top: 0;
+    color: black;
+  }
+  #apply,#save {
+    width: 40vw;
+    margin: 2vh 0 2vh 23vw;
+  }
+}
+
+.appliedJobs {
+  #jobCard {
+    display: flex;
+    margin: 5vh 0 0 12vw
+  }
+  #ButtonGroup {
+    margin: 0 0 0 35vw;
+  }
+  .groupButton{
+    background-color: transparent;
+    border: 1px solid grey;
+    color: black;
+    width: 10vw;
+    margin: 4vh 0 0 0;
+  }
+  .removeButton{
+    display: flex;
+    Button{
+      margin-left: 50vw;
+    }
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .jobSearch {
+    .inputBox {
+      width: 60vw;
+      height: 5vh;
+      margin: 2vw 0 0 20vw;
+    }
+    .search {
+      margin: 2vh 0 0 40vw;
+    }
+    .groupButton{
+      background-color: transparent;
+      border: 1px solid grey;
+      color: black;
+      width: 25vw;
+      margin: 4vh 0 0 0;
+    }
+    #jobCard {
+      display: flex;
+      margin: 5vh 0 0 0
+    }
+  }
+  .appliedJobs {
+    #jobCard {
+      display: flex;
+      margin: 5vh 0 0 0
+    }
+    #ButtonGroup {
+      margin: 0 0 0 15vw;
+    }
+    .groupButton{
+      background-color: transparent;
+      border: 1px solid grey;
+      color: black;
+      width: 25vw;
+      margin: 4vh 0 0 0;
+    }
+  }
+  .body span {
+    .apply{
+      margin-left: 15vw;
+    }
+    .save{
+      margin-left: 5vw;
+    }
+  }
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+  .jobSearch {
+    .inputBox {
+      width: 60vw;
+      height: 5vh;
+      margin: 2vw 0 0 20vw;
+    }
+    .search {
+      margin: 2vh 0 0 40vw;
+    }
+    .groupButton{
+      background-color: transparent;
+      border: 1px solid grey;
+      color: black;
+      width: 25vw;
+      margin: 4vh 0 0 0;
+    }
+    #jobCard {
+      display: flex;
+      margin: 5vh 0 0 0
+    }
+  }
+  .appliedJobs {
+    #jobCard {
+      display: flex;
+      margin: 5vh 0 0 0
+    }
+    #ButtonGroup {
+      margin: 0 0 0 15vw;
+    }
+    .groupButton{
+      background-color: transparent;
+      border: 1px solid grey;
+      color: black;
+      width: 25vw;
+      margin: 4vh 0 0 0;
+    }
+  }
+  .body span {
+    .apply{
+      margin-left: 50vw;
+    }
+    .save{
+      margin-left: 5vw;
+    }
+  }
+}
+@media (min-width: 500px) and (max-width: 700px) {
+  .jobSearch {
+    .inputBox {
+      width: 60vw;
+      height: 5vh;
+      margin: 2vw 0 0 20vw;
+    }
+    .search {
+      margin: 2vh 0 0 40vw;
+    }
+    .groupButton{
+      background-color: transparent;
+      border: 1px solid grey;
+      color: black;
+      width: 25vw;
+      margin: 4vh 0 0 0;
+    }
+    #jobCard {
+      display: flex;
+      margin: 5vh 0 0 0
+    }
+  }
+  .appliedJobs {
+    #jobCard {
+      display: flex;
+      margin: 5vh 0 0 0
+    }
+    #ButtonGroup {
+      margin: 0 0 0 15vw;
+    }
+    .groupButton{
+      background-color: transparent;
+      border: 1px solid grey;
+      color: black;
+      width: 25vw;
+      margin: 4vh 0 0 0;
+    }
+  }
+  .body span {
+    .apply{
+      margin-left: 35vw;
+    }
+    .save{
+      margin-left: 5vw;
+    }
+  }
+}

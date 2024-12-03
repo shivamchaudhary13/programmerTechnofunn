@@ -1,0 +1,48 @@
+.sidebar {
+    background-color: #1974bb;
+    width: 20%;
+    height: 90vh;
+    p{
+        font-size: 25px;
+        color: white;
+        padding: 10px 0 0 50px;
+        cursor: pointer;
+        &:hover {
+            background-color: rgba(95, 158, 160, 0.319);
+        }
+    }
+    .sidebarData {
+        img {
+            border-radius: 30%;
+            margin: 5vh 0 0 90px;
+        }
+        h4 {
+            text-align: center;
+        }
+    }
+}
+
+
+.selectedPage {
+    display: flex;
+}
+
+.mainbar {
+    background-color: rgba(128, 128, 128, 0.263);
+    height: 10vh;
+    .profile {
+        padding: 2vh 0 0 0;
+    }
+    img {
+        width: 3vw;
+        height: 3vw;
+        border-radius: 50%;
+        margin: 0 0 0 80vw;
+    }
+}
+
+
+.candidateChart,.jobOpeningsChart {
+    border: 2px solid black;
+    margin: 3vw;
+}

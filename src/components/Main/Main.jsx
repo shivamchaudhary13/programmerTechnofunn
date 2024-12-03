@@ -6,10 +6,12 @@ import { Courses } from "../Courses/Courses";
 import { AboutUs } from "../AboutUs/AboutUs";
 import { Footer } from "../Footer/Footer";
 import { Team } from "../Team/Team";
+import './Main.scss'
 
 export const Main = () => {
   return (
-    <div>
+    <div id="main">
+      {/* <JobOpeningsData /> */}
       <NavbarScreen></NavbarScreen>
       <ImageSlider></ImageSlider>
       <Purpose></Purpose>

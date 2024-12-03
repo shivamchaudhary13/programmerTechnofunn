@@ -1,10 +1,11 @@
-import React from 'react'
-import '../Purpose/Purpose.scss'
+import React from "react";
+import "../Purpose/Purpose.scss";
+import constants from "../../utils/constants";
 export const Purpose = () => {
   return (
-    <div className='purpose'>
-        <h1>Our Purpose</h1>
-        <p>To Introduce the Youth Generation with Technologies..</p>
+    <div className="purpose">
+      <h1>{constants.ourPurpose}</h1>
+      <p>{constants.purposeText}</p>
     </div>
-  )
-}
+  );
+};

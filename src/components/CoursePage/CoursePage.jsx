@@ -8,158 +8,91 @@ import react from "../../assets/new imgs/reacttuts.jpeg";
 import onlineTest from "../../assets/new imgs/onlinetest.jpg";
 import "../CoursePage/CoursePage.scss";
 import { NavbarScreen } from "../Navbar/Navbar";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { useNavigate, useParams } from "react-router-dom";
+import constants from "../../utils/constants";
 
-export const htmlTutorials = () => {
+export const Tutorials = () => {
+  let {type} = useParams();
+  let tutorialTitle;
+  let tutorialText;
+  let tutorialImage;
+  let testTitle;
+  let testText;
+  let textImage;
+  let url;  
+
+  if(type === 'htmlTutorial') {
+    tutorialTitle = constants.htmlTutorial;
+    tutorialText = constants.htmlText;
+    testTitle = constants.htmlOnlineTest;
+    testText = constants.htmlOnlineText;
+    tutorialImage = html;
+    textImage = onlineTest;
+    url = 'html'
+  }
+  else if(type === 'cssTutorial') {
+    tutorialTitle = constants.cssTutorial;
+    tutorialText = constants.cssText;
+    testTitle = constants.cssOnlineTest;
+    testText = constants.cssOnlineText;
+    tutorialImage = css;
+    textImage = onlineTest;
+    url = 'css'
+  }
+  else if(type === 'angularTutorial') {
+    tutorialTitle = constants.angularTutorial;
+    tutorialText = constants.angularText;
+    testTitle = constants.angularOnlineTest;
+    testText = constants.angularOnlineText;
+    tutorialImage = angular;
+    textImage = onlineTest;
+    url = 'angular'
+  }
+  else if(type === 'reactTutorial') {
+    tutorialTitle = constants.reactTutorial;
+    tutorialText = constants.reactText;
+    testTitle = constants.reactOnlineTest;
+    testText = constants.reactOnlineText;
+    tutorialImage = react;
+    textImage = onlineTest;
+    url = 'react'
+  }
+  else if(type === 'jsTutorial') {
+    tutorialTitle = constants.jsTutorial;
+    tutorialText = constants.jsText;
+    testTitle = constants.jsOnlineTest;
+    testText = constants.jsOnlineText;
+    tutorialImage = javascript;
+    textImage = onlineTest;
+    url = 'js'
+  }
+  
+  const navigate = useNavigate();
+  console.log(url);
+  
   return (
     <div>
       <NavbarScreen></NavbarScreen>
+      <ArrowBackIcon
+        sx={{ margin: "5vh 0 0 4vw" }}
+        onClick={() => navigate(-1)}
+      />
       <div className="cardTutorials">
         <Card className="card" style={{ width: "17.7rem" }}>
-          <Card.Img className="image" variant="top" src={html} />
+          <Card.Img className="image" variant="top" src={tutorialImage} />
           <Card.Body>
-            <Card.Title>HTML Tutorial</Card.Title>
-            <Card.Text>
-              In this Tutorial, you can learn top-wise about HTML.
-            </Card.Text>
-            <a href="/html-tutorial">
-            <Button variant="primary">Click Here</Button>
-            </a>
+            <Card.Title>{tutorialTitle}</Card.Title>
+            <Card.Text>{tutorialText}</Card.Text>
+              <Button variant="primary" onClick={() => navigate(`/${url}-tutorial`)}>{constants.clickHere}</Button>
           </Card.Body>
         </Card>
         <Card className="card" style={{ width: "17.7rem" }}>
-          <Card.Img className="image" variant="top" src={onlineTest} />
+          <Card.Img className="image" variant="top" src={textImage} />
           <Card.Body>
-            <Card.Title>HTML Online Test</Card.Title>
-            <Card.Text>
-              By doing this online test,You can test your html skill.
-            </Card.Text>
-            <a href="/html-online-test">
-              <Button variant="primary">Click Here</Button>
-            </a>
-          </Card.Body>
-        </Card>
-      </div>
-    </div>
-  );
-};
-export const cssTutorials = () => {
-  return (
-    <div>
-      <NavbarScreen></NavbarScreen>
-      <div className="cardTutorials">
-        <Card className="card" style={{ width: "17.7rem" }}>
-          <Card.Img className="image" variant="top" src={css} />
-          <Card.Body>
-            <Card.Title>CSS Tutorial</Card.Title>
-            <Card.Text>
-              In this Tutorial, you can learn top-wise about CSS.
-            </Card.Text>
-            <Button variant="primary">Click Here</Button>
-          </Card.Body>
-        </Card>
-        <Card className="card" style={{ width: "17.7rem" }}>
-          <Card.Img className="image" variant="top" src={onlineTest} />
-          <Card.Body>
-            <Card.Title>CSS Online Test</Card.Title>
-            <Card.Text>
-              By doing this online test,You can test your CSS skill.
-            </Card.Text>
-            <a href="/css-online-test">
-            <Button variant="primary">Click Here</Button>
-            </a>
-          </Card.Body>
-        </Card>
-      </div>
-    </div>
-  );
-};
-export const javascriptTutorials = () => {
-  return (
-    <div>
-      <NavbarScreen></NavbarScreen>
-      <div className="cardTutorials">
-        <Card className="card" style={{ width: "17.7rem" }}>
-          <Card.Img className="image" variant="top" src={javascript} />
-          <Card.Body>
-            <Card.Title>JAVASCRIPT Tutorial</Card.Title>
-            <Card.Text>
-              In this Tutorial, you can learn top-wise about JAVASCRIPT.
-            </Card.Text>
-            <Button variant="primary">Click Here</Button>
-          </Card.Body>
-        </Card>
-        <Card className="card" style={{ width: "17.7rem" }}>
-          <Card.Img className="image" variant="top" src={onlineTest} />
-          <Card.Body>
-            <Card.Title>JAVASCRIPT Online Test</Card.Title>
-            <Card.Text>
-              By doing this online test,You can test your javscript skill.
-            </Card.Text>
-            <a href="/js-online-test">
-            <Button variant="primary">Click Here</Button>
-            </a>
-          </Card.Body>
-        </Card>
-      </div>
-    </div>
-  );
-};
-export const angularTutorials = () => {
-  return (
-    <div>
-      <NavbarScreen></NavbarScreen>
-      <div className="cardTutorials">
-        <Card className="card" style={{ width: "17.7rem" }}>
-          <Card.Img className="image" variant="top" src={angular} />
-          <Card.Body>
-            <Card.Title>ANGULAR Tutorial</Card.Title>
-            <Card.Text>
-              In this Tutorial, you can learn top-wise about ANGULAR.
-            </Card.Text>
-            <Button variant="primary">Click Here</Button>
-          </Card.Body>
-        </Card>
-        <Card className="card" style={{ width: "17.7rem" }}>
-          <Card.Img className="image" variant="top" src={onlineTest} />
-          <Card.Body>
-            <Card.Title>ANGULAR Online Test</Card.Title>
-            <Card.Text>
-              By doing this online test,You can test your angular skill.
-            </Card.Text>
-            <a href="/angular-online-test">
-            <Button variant="primary">Click Here</Button>
-            </a>
-          </Card.Body>
-        </Card>
-      </div>
-    </div>
-  );
-};
-export const reactTutorials = () => {
-  return (
-    <div>
-      <NavbarScreen></NavbarScreen>
-      <div className="cardTutorials">
-        <Card className="card" style={{ width: "17.7rem" }}>
-          <Card.Img className="image" variant="top" src={react} />
-          <Card.Body>
-            <Card.Title>REACT Tutorial</Card.Title>
-            <Card.Text>
-              In this Tutorial, you can learn top-wise about REACT.
-            </Card.Text>
-            <Button variant="primary">Click Here</Button>
-          </Card.Body>
-        </Card>
-        <Card className="card" style={{ width: "17.7rem" }}>
-          <Card.Img className="image" variant="top" src={onlineTest} />
-          <Card.Body>
-            <Card.Title>REACT Online Test</Card.Title>
-            <Card.Text>
-              In this Tutorial, you can learn top-wise about REACT.
-            </Card.Text>
-            <a href="/react-online-test">
-            <Button variant="primary">Click Here</Button>
-            </a>
+            <Card.Title>{testTitle}</Card.Title>
+            <Card.Text>{testText}</Card.Text> 
+              <Button variant="primary" onClick={() => navigate(`/${url}-online-test`)}>{constants.clickHere}</Button>
           </Card.Body>
         </Card>
       </div>

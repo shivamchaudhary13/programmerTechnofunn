@@ -1,193 +1,224 @@
-.register{
-    display: flex;
-    width: 50%;
-    height: 80vh;
-    margin: 4vw 0 0 25vw;
-    .left{
-        width: 60%;
-        background-color: #1974BB;
-        h2{
-            text-align: center;
-            margin: 5vh 0 0 0;
-        }
-        form{
-            padding: 5vh 0 0 12vh;
-            input{
-                margin: 3vh 2vw 0 0;
-                border-radius: 5px;
-                width: 80%;
-            }
-            button{
-                margin: 2vh 0 0 6vw;
-                border-radius: 0.5rem;
-                background-color: grey;
-                color: #fff;
-            }
-        }
-        .bottomLines{
-            display: flex;
-            justify-content: space-evenly;
-            a{
-                color: #fff;
-                text-decoration: none;
-                &:hover{
-                    color: red;
-                }
-            }
-        }
-    }
-    .right{
-        width: 40%;
-        background-color: grey;
-        h2{
-            text-align: center;
-            color: #fff;
-            margin: 15vh 0 0 0;
-        }
-        p{
-            font-style: italic;
-            width: 80%;
-            padding: 5vh 0 0 3vw;
-            color: #fff;
-        }
-    }
+.alert {
+  margin: 4vh 0 0 40vw;
 }
-
-
+.registerMsg {
+  color: yellowgreen;
+  text-align: center;
+}
+.register {
+  display: flex;
+  width: 90%;
+  height: 90vh;
+  margin: 4vw 0 0 5vw;
+  .left {
+    width: 100%;
+    background-color: #1974bb;
+    h2 {
+      text-align: center;
+      margin: 5vh 0 0 0;
+    }
+    form {
+      padding: 10vh 3vw 0 12vh;
+      .formInputs {
+        display: flex;
+      }
+      input,select {
+        margin: 1vh 3vw 0 0;
+        border-radius: 5px;
+        width: 90%;
+      }
+      .errors{
+        color: #ff0000;
+      }
+      button {
+        margin: 0 0 0 14vw;
+        border-radius: 0.5rem;
+      }
+    }
+    .bottomLines {
+      display: flex;
+      justify-content: space-evenly;
+      p {
+        margin: 1vh 3vw 0 0;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+  .right {
+    width: 40%;
+    background-color: grey;
+    h2 {
+      text-align: center;
+      color: #fff;
+      margin: 15vh 0 0 0;
+    }
+    p {
+      font-style: italic;
+      width: 80%;
+      padding: 5vh 0 0 3vw;
+      color: #fff;
+    }
+  }
+}
 
 @media (min-width: 300px) and (max-width: 900px) {
-    .register{
+  .register {
+    display: flex;
+    width: 135%;
+    height: 90vh;
+    margin: 15vw 0 0 10vw;
+    .left {
+      width: 60%;
+      background-color: #1974bb;
+      h2 {
+        text-align: center;
+        margin: 5vh 0 0 0;
+      }
+      form {
+        padding: 1vh 7vw 0 7vh;
+        input {
+          margin:  0 0 0 0;
+        }
+        .formInputs {
+          display: block;
+        }
+        .uploadButton {
+          margin: 0 0 0 4vw;
+        }
+        #submit, #clear {
+          margin: 2vh 0 0 9vw;
+          border-radius: 0.5rem;
+          width: 30vw;
+        }
+      }
+      .bottomLines {
         display: flex;
-        width: 135%;
-        height: 80vh;
-        margin: 15vw 0 0 10vw;
-        .left{
-            width: 60%;
-            background-color: #1974BB;
-            h2{
-                text-align: center;
-                margin: 5vh 0 0 0;
-            }
-            form{
-                padding: 3vh 0 0 7vh;
-                button{
-                    margin: 2vh 0 0 16vw;
-                    border-radius: 0.5rem;
-                    background-color: grey;
-                    color: #fff;
-                }
-            }
-            .bottomLines{
-                display: flex;
-                justify-content: space-evenly;
-                padding: 2vh 0 0 0;
-                a{
-                    color: #fff;
-                    text-decoration: none;
-                    &:hover{
-                        color: red;
-                    }
-                }
-            }
+        justify-content: space-evenly;
+        padding: 2vh 0 0 0;
+        a {
+          color: #fff;
+          text-decoration: none;
+          &:hover {
+            color: red;
+          }
         }
-        .right{
-            display: none;
-        }
+      }
     }
+    .right {
+      display: none;
+    }
+  }
 }
 @media (min-width: 700px) and (max-width: 1200px) {
-    .register{
+  .register {
+    display: flex;
+    width: 135%;
+    height: 80vh;
+    margin: 15vw 0 0 10vw;
+    .left {
+      width: 60%;
+      background-color: #1974bb;
+      h2 {
+        text-align: center;
+        margin: 5vh 0 0 0;
+      }
+      form {
+        padding: 3vh 9vw 0 10vh;
+        .formInputs {
+          display: block;
+        }
+        .uploadButton {
+          margin: 0 0 0 15vw;
+        }
+        input {
+          height: 4vh;
+          &::placeholder {
+            font-size: 1.5rem;
+          }
+        }
+        button {
+          margin: 2vh 0 0 18vw;
+          font-size: 1.5rem;
+        }
+      }
+      .bottomLines {
         display: flex;
-        width: 135%;
-        height: 80vh;
-        margin: 15vw 0 0 10vw;
-        .left{
-            width: 60%;
-            background-color: #1974BB;
-            h2{
-                text-align: center;
-                margin: 5vh 0 0 0;
-            }
-            form{
-                padding: 3vh 0 0 10vh;
-                input{
-                    height: 4vh;
-                    &::placeholder{
-                        font-size: 1.5rem;
-                    }
-                }
-                button{
-                    margin: 2vh 0 0 18vw;
-                    font-size: 1.5rem;
-                }
-            }
-            .bottomLines{
-                display: flex;
-                justify-content: space-evenly;
-                padding: 2vh 0 0 0;
-                p{
-                    font-size: 2rem;
-                }
-                a{
-                    color: #fff;
-                    text-decoration: none;
-                    &:hover{
-                        color: red;
-                    }
-                }
-            }
+        justify-content: space-evenly;
+        padding: 2vh 0 0 0;
+        p {
+          font-size: 2rem;
         }
-        .right{
-            display: none;
+        a {
+          color: #fff;
+          text-decoration: none;
+          &:hover {
+            color: red;
+          }
         }
+      }
     }
+    .right {
+      display: none;
+    }
+  }
 }
 @media (min-width: 500px) and (max-width: 700px) {
-    .register{
+  .register {
+    display: flex;
+    width: 135%;
+    height: 110vh;
+    margin: 15vw 0 0 10vw;
+    .left {
+      width: 60%;
+      background-color: #1974bb;
+      h2 {
+        text-align: center;
+        margin: 5vh 0 0 0;
+      }
+      form {
+        padding: 3vh 8vw 0 10vh;
+        .formInputs {
+          display: block;
+        }
+        .uploadButton {
+          margin: 0 0 0 15vw;
+        }
+        input {
+          height: 4vh;
+          &::placeholder {
+            font-size: 1rem;
+          }
+        }
+        #submit, #clear {
+          margin: 2vh 0 0 15vw;
+          border-radius: 0.5rem;
+          width: 30vw;
+        }
+      }
+      .bottomLines {
         display: flex;
-        width: 135%;
-        height: 80vh;
-        margin: 15vw 0 0 10vw;
-        .left{
-            width: 60%;
-            background-color: #1974BB;
-            h2{
-                text-align: center;
-                margin: 5vh 0 0 0;
-            }
-            form{
-                padding: 3vh 0 0 10vh;
-                input{
-                    height: 4vh;
-                    &::placeholder{
-                        font-size: 1rem;
-                    }
-                }
-                button{
-                    margin: 2vh 0 0 16vw;
-                    border-radius: 0.5rem;
-                    background-color: grey;
-                    color: #fff;
-                }
-            }
-            .bottomLines{
-                display: flex;
-                justify-content: space-evenly;
-                padding: 2vh 0 0 0;
-                p{
-                    font-size: 1.5rem;
-                }
-                a{
-                    color: #fff;
-                    text-decoration: none;
-                    &:hover{
-                        color: red;
-                    }
-                }
-            }
+        justify-content: space-evenly;
+        padding: 2vh 0 0 0;
+        p {
+          font-size: 1.5rem;
         }
-        .right{
-            display: none;
+        a {
+          color: #fff;
+          text-decoration: none;
+          &:hover {
+            color: red;
+          }
         }
+      }
     }
+    .right {
+      display: none;
+    }
+  }
 }

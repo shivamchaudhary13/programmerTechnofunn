@@ -3,21 +3,25 @@ import { NavbarScreen } from "../Navbar/Navbar";
 import "../OnlineTests/OnlineTest.scss";
 import axios from "axios";
 import { Button } from "react-bootstrap";
+import API from "../../apiManager/endPoints";
+import { useNavigate } from "react-router-dom";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import CircularProgress from '@mui/material/CircularProgress';
+import constants from "../../utils/constants";
+
 export const ReactOnlineTest = () => {
+  const username = JSON.parse(localStorage.getItem("user"));
   const [selectedValue, setSelectedValue] = useState("");
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
   const [score, setScore] = useState(0);
-  const [showScore, setShowScore] = useState(false);
-
+  const [loader, setLoader] = useState(false);
+  const Navigate = useNavigate();
   useEffect(() => {
     if (selectedValue) {
       axios
-        .get(
-          `http://localhost:3000/api/test/online-test?course=react&type=${selectedValue}`
-        )
+        .get(`${API.GET_QUESTION}/${"REACT"}/${selectedValue}`)
         .then((response) => {
-          console.log(response);
           setQuestion(response.data);
         })
         .catch((error) => {
@@ -29,18 +33,25 @@ export const ReactOnlineTest = () => {
   const handleSelectChange = (event) => {
     const newValue = event.target.value;
     setSelectedValue(newValue);
-    console.log("Selected Value:", newValue);
   };
 
   const finalScore = () => {
-    setShowScore(true);
+    setLoader(true);
+    setTimeout(() => {
+      Navigate("/certificate", {
+        state: {
+          name: username.user.firstName + " " + username.user.lastName,
+          course: "React",
+        },
+      });
+    }, 10000);
   };
   const handleAnswerChange = (questionIndex, selectedValue) => {
     setAnswer({ ...answer, [questionIndex]: selectedValue });
 
     if (
-      question.result[questionIndex] &&
-      question.result[questionIndex].answer === selectedValue
+      question[questionIndex] &&
+      question[questionIndex].answer === selectedValue
     ) {
       setScore(score + 1);
     }
@@ -48,18 +59,19 @@ export const ReactOnlineTest = () => {
   return (
     <div className="onlinetest">
       <NavbarScreen></NavbarScreen>
-      <h1>Online Test</h1>
+      <ArrowBackIcon sx={{ margin: "5vh 0 0 4vw" }} onClick={() => Navigate(-1)}/>
+      <h1>{constants.reactOnlineTest}</h1>
       <div className="test">
-        <h3>Select a level:</h3>
+        <h3>{constants.selectALevel}:</h3>
         <select onChange={handleSelectChange} value={selectedValue}>
-          <option value="">Select an option</option>
-          <option value="Basic">Basic</option>
-          <option value="advanced">Advanced</option>
+          <option value="">{constants.selectAnOption}</option>
+          <option value="Basic">{constants.basic}</option>
+          <option value="advanced">{constants.advanced}</option>
         </select>
       </div>
       <div className="questions">
-        {question.result
-          ? question.result.map((data, index) => (
+        {question
+          ? question.map((data, index) => (
               <div>
                 <div key={index}>
                   <div className="question">
@@ -80,7 +92,7 @@ export const ReactOnlineTest = () => {
                     name={`answer${index}`}
                   />
                   False
-                  {answer[index] !== undefined ? (
+                  {/* {answer[index] !== undefined ? (
                     data.answer === answer[index] ? (
                       <div>
                         <p>Correct answer</p>
@@ -91,16 +103,16 @@ export const ReactOnlineTest = () => {
                     )
                   ) : (
                     ""
-                  )}
+                  )} */}
                 </div>
                 <div className="submitButton">
-                  <Button onClick={finalScore}>Submit</Button>
-                  {showScore ? <p>Your total score: {score}</p> : ""}
+                  <Button onClick={finalScore}>{constants.submit}</Button>
                 </div>
               </div>
             ))
           : ""}
       </div>
+      {loader ? <CircularProgress size={120} thickness={1.5} className="loading" color="inherit" /> : ''}
     </div>
   );
 };

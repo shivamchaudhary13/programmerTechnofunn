@@ -1,9 +1,18 @@
-.htmltut{
-    h1{
-        text-align: center;
-        color: #1974BB;
-    }
-    p{
-        padding: 0 2vw 0 2vw;
-    }
+.htmltut {
+  h1 {
+    text-align: center;
+    color: #1974bb;
+  }
+  h3,h4 {
+    margin: 1vh 2vw 2vh 2vw;
+  }
+  p {
+    padding: 1vh 2vw 0 2vw;
+  }
+  ul {
+    margin: 1vh 2vw 0 2vw;
+  }
+  img {
+    margin: 1vh 0 3vh 5vw
+  }
 }

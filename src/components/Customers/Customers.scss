@@ -1,0 +1,38 @@
+.customer{
+    h1{
+        color: #1974bb;
+        text-align: center;
+    }
+    table{
+        width: 100%;
+        height: auto;
+        margin: 5vh 0 0 4vw;
+    }
+}
+
+.updateProfile {
+    width: 60%;
+    background-color: rgba(128, 128, 128, 0.158);
+    margin: 10vh 0 0 25vw;
+    h1 {
+      text-align: center;
+      padding: 5vh 0 0 0;
+    }
+    form {
+      margin: 2vh 0 0 6vw;
+      input {
+        margin: 2vh 0 0 0;
+        width: 18vw;
+        border-radius: 5px;
+      }
+      select {
+        margin: 2vh 0 0 0;
+        width: 18vw;
+        border-radius: 5px;
+        border-width: 3px;
+      }
+      Button {
+        margin: 2vh 0 5vh 2vw;
+      }
+    }
+  }
